@@ -1,0 +1,178 @@
+[
+  {
+    "reportId": "R005",
+    "questionId": "68dea616d0cda73d07e93ae6",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "2",
+      "replace": "1"
+    },
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "The original answer key is 2, but the correct value is n=1.",
+      "Flux from q/2 at the face centre is q/(4 epsilon_0).",
+      "Flux from 2q at the corner is q/(4 epsilon_0).",
+      "Total flux is q/(2 epsilon_0), matching nq/(2 epsilon_0) with n=1.",
+      "The existing solution also calculates total flux as q/(2 epsilon_0)."
+    ],
+    "student_reply": "Thank you for reporting this. Your calculation is correct: the value of n is 1. The answer key currently shows 2, and a correction has been proposed for faculty review.",
+    "provenance": "human_assisted_mathematical_review",
+    "validated": true,
+    "applied": false
+  },
+  {
+    "reportId": "R001",
+    "questionId": "60f744b3f1b9bc7cc7b4a949",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "C",
+      "replace": "A"
+    },
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "The question gives VL=60 V, VC=30 V and VR=40 V.",
+      "For a series LCR circuit, V=sqrt(VR^2+(VL-VC)^2).",
+      "V=sqrt(40^2+(60-30)^2)=sqrt(2500)=50 V.",
+      "Option A is 50 V, while the stored answer key is C (130 V).",
+      "The existing solution also concludes 50 V."
+    ],
+    "student_reply": "Thank you for reporting this. The correct supply voltage is 50 V, corresponding to option A. The existing answer key incorrectly marks option C. A correction has been proposed for faculty review.",
+    "provenance": "human_assisted_mathematical_review",
+    "validated": true,
+    "applied": false
+  },
+  {
+    "reportId": "R002",
+    "questionId": "60f744b3f1b9bc7cc7b4a949",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "C",
+      "replace": "A"
+    },
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "The question gives VL=60 V, VC=30 V and VR=40 V.",
+      "For a series LCR circuit, V=sqrt(VR^2+(VL-VC)^2).",
+      "V=sqrt(40^2+(60-30)^2)=sqrt(2500)=50 V.",
+      "Option A is 50 V, while the stored answer key is C (130 V).",
+      "The existing solution also concludes 50 V."
+    ],
+    "student_reply": "Thank you for reporting this. The correct supply voltage is 50 V, corresponding to option A. The existing answer key incorrectly marks option C. A correction has been proposed for faculty review.",
+    "provenance": "human_assisted_mathematical_review",
+    "validated": true,
+    "applied": false
+  },
+  {
+    "reportId": "R003",
+    "questionId": "60f744b3f1b9bc7cc7b4a949",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "C",
+      "replace": "A"
+    },
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "The question gives VL=60 V, VC=30 V and VR=40 V.",
+      "For a series LCR circuit, V=sqrt(VR^2+(VL-VC)^2).",
+      "V=sqrt(40^2+(60-30)^2)=sqrt(2500)=50 V.",
+      "Option A is 50 V, while the stored answer key is C (130 V).",
+      "The existing solution also concludes 50 V."
+    ],
+    "student_reply": "Thank you for reporting this. The correct supply voltage is 50 V, corresponding to option A. The existing answer key incorrectly marks option C. A correction has been proposed for faculty review.",
+    "provenance": "human_assisted_mathematical_review",
+    "validated": true,
+    "applied": false
+  },
+  {
+    "reportId": "R004",
+    "questionId": "68e870ef42c06737d6e565c4",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "A",
+      "replace": "D"
+    },
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Gas pressure P=(1/3)*density*(rms speed)^2.",
+      "P=(1/3)*0.09*400^2=4800 Pa.",
+      "4800 Pa is option D, but the stored answer is A.",
+      "The existing solution also calculates 4800 Pa."
+    ],
+    "student_reply": "Thank you for reporting this. The correct pressure is 4800 Pa (option D). The answer-key correction has been proposed for faculty review.",
+    "provenance": "human_assisted_mathematical_review",
+    "validated": true,
+    "applied": false
+  },
+  {
+    "reportId": "R006",
+    "questionId": "696a866665252c04fc1f81c2",
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "The question gives pressure and bulk modulus but no initial cube volume or edge length.",
+      "The formula gives fractional contraction DeltaV/V=5e-5.",
+      "The solution assumes a cube edge of 10 cm without stating it in the question.",
+      "The intended dimension must be confirmed before editing."
+    ],
+    "student_reply": "Thank you for reporting this. The question is missing the cube dimensions needed to calculate the absolute volume contraction. It has been flagged for faculty correction.",
+    "provenance": "human_assisted_mathematical_review",
+    "validated": true,
+    "applied": false
+  },
+  {
+    "reportId": "R007",
+    "questionId": "60f742f6660d187cc13a8078",
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "The question provides resistance 40 ohm and frequency 50 Hz but no inductance.",
+      "Series RL impedance is Z=sqrt(R^2+(2*pi*f*L)^2).",
+      "The solution substitutes L=95.5 mH, which is absent from the question.",
+      "The intended inductance must be confirmed before editing."
+    ],
+    "student_reply": "Thank you for reporting this. The inductance value is missing from the question. The issue has been flagged for faculty review.",
+    "provenance": "human_assisted_mathematical_review",
+    "validated": true,
+    "applied": false
+  },
+  {
+    "reportId": "R008",
+    "questionId": "60f742f6660d187cc13a8078",
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "The question provides resistance 40 ohm and frequency 50 Hz but no inductance.",
+      "Series RL impedance depends on the inductance value.",
+      "The solution uses 95.5 mH, which is not given in the question.",
+      "R007 and R008 identify the same question-level defect."
+    ],
+    "student_reply": "Thank you for reporting this. The question does not provide the inductance required to calculate impedance. It has been flagged for faculty review.",
+    "provenance": "human_assisted_mathematical_review",
+    "validated": true,
+    "applied": false
+  }
+]

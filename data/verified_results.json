@@ -1,0 +1,806 @@
+[
+  {
+    "reportId": "R005",
+    "questionId": "68dea616d0cda73d07e93ae6",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "2",
+      "replace": "1"
+    },
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "The original answer key is 2, but the correct value is n=1.",
+      "Flux from q/2 at the face centre is q/(4 epsilon_0).",
+      "Flux from 2q at the corner is q/(4 epsilon_0).",
+      "Total flux is q/(2 epsilon_0), matching nq/(2 epsilon_0) with n=1.",
+      "The existing solution also calculates total flux as q/(2 epsilon_0)."
+    ],
+    "student_reply": "Thank you for reporting this. Your calculation is correct: the value of n is 1. The answer key currently shows 2, and a correction has been proposed for faculty review.",
+    "provenance": "human_assisted_mathematical_review",
+    "validated": true,
+    "applied": false
+  },
+  {
+    "reportId": "R001",
+    "questionId": "60f744b3f1b9bc7cc7b4a949",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "C",
+      "replace": "A"
+    },
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "The question gives VL=60 V, VC=30 V and VR=40 V.",
+      "For a series LCR circuit, V=sqrt(VR^2+(VL-VC)^2).",
+      "V=sqrt(40^2+(60-30)^2)=sqrt(2500)=50 V.",
+      "Option A is 50 V, while the stored answer key is C (130 V).",
+      "The existing solution also concludes 50 V."
+    ],
+    "student_reply": "Thank you for reporting this. The correct supply voltage is 50 V, corresponding to option A. The existing answer key incorrectly marks option C. A correction has been proposed for faculty review.",
+    "provenance": "human_assisted_mathematical_review",
+    "validated": true,
+    "applied": false
+  },
+  {
+    "reportId": "R002",
+    "questionId": "60f744b3f1b9bc7cc7b4a949",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "C",
+      "replace": "A"
+    },
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "The question gives VL=60 V, VC=30 V and VR=40 V.",
+      "For a series LCR circuit, V=sqrt(VR^2+(VL-VC)^2).",
+      "V=sqrt(40^2+(60-30)^2)=sqrt(2500)=50 V.",
+      "Option A is 50 V, while the stored answer key is C (130 V).",
+      "The existing solution also concludes 50 V."
+    ],
+    "student_reply": "Thank you for reporting this. The correct supply voltage is 50 V, corresponding to option A. The existing answer key incorrectly marks option C. A correction has been proposed for faculty review.",
+    "provenance": "human_assisted_mathematical_review",
+    "validated": true,
+    "applied": false
+  },
+  {
+    "reportId": "R003",
+    "questionId": "60f744b3f1b9bc7cc7b4a949",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "C",
+      "replace": "A"
+    },
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "The question gives VL=60 V, VC=30 V and VR=40 V.",
+      "For a series LCR circuit, V=sqrt(VR^2+(VL-VC)^2).",
+      "V=sqrt(40^2+(60-30)^2)=sqrt(2500)=50 V.",
+      "Option A is 50 V, while the stored answer key is C (130 V).",
+      "The existing solution also concludes 50 V."
+    ],
+    "student_reply": "Thank you for reporting this. The correct supply voltage is 50 V, corresponding to option A. The existing answer key incorrectly marks option C. A correction has been proposed for faculty review.",
+    "provenance": "human_assisted_mathematical_review",
+    "validated": true,
+    "applied": false
+  },
+  {
+    "reportId": "R004",
+    "questionId": "68e870ef42c06737d6e565c4",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "A",
+      "replace": "D"
+    },
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Gas pressure P=(1/3)*density*(rms speed)^2.",
+      "P=(1/3)*0.09*400^2=4800 Pa.",
+      "4800 Pa is option D, but the stored answer is A.",
+      "The existing solution also calculates 4800 Pa."
+    ],
+    "student_reply": "Thank you for reporting this. The correct pressure is 4800 Pa (option D). The answer-key correction has been proposed for faculty review.",
+    "provenance": "human_assisted_mathematical_review",
+    "validated": true,
+    "applied": false
+  },
+  {
+    "reportId": "R006",
+    "questionId": "696a866665252c04fc1f81c2",
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "The question gives pressure and bulk modulus but no initial cube volume or edge length.",
+      "The formula gives fractional contraction DeltaV/V=5e-5.",
+      "The solution assumes a cube edge of 10 cm without stating it in the question.",
+      "The intended dimension must be confirmed before editing."
+    ],
+    "student_reply": "Thank you for reporting this. The question is missing the cube dimensions needed to calculate the absolute volume contraction. It has been flagged for faculty correction.",
+    "provenance": "human_assisted_mathematical_review",
+    "validated": true,
+    "applied": false
+  },
+  {
+    "reportId": "R007",
+    "questionId": "60f742f6660d187cc13a8078",
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "The question provides resistance 40 ohm and frequency 50 Hz but no inductance.",
+      "Series RL impedance is Z=sqrt(R^2+(2*pi*f*L)^2).",
+      "The solution substitutes L=95.5 mH, which is absent from the question.",
+      "The intended inductance must be confirmed before editing."
+    ],
+    "student_reply": "Thank you for reporting this. The inductance value is missing from the question. The issue has been flagged for faculty review.",
+    "provenance": "human_assisted_mathematical_review",
+    "validated": true,
+    "applied": false
+  },
+  {
+    "reportId": "R008",
+    "questionId": "60f742f6660d187cc13a8078",
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "The question provides resistance 40 ohm and frequency 50 Hz but no inductance.",
+      "Series RL impedance depends on the inductance value.",
+      "The solution uses 95.5 mH, which is not given in the question.",
+      "R007 and R008 identify the same question-level defect."
+    ],
+    "student_reply": "Thank you for reporting this. The question does not provide the inductance required to calculate impedance. It has been flagged for faculty review.",
+    "provenance": "human_assisted_mathematical_review",
+    "validated": true,
+    "applied": false
+  },
+  {
+    "reportId": "R009",
+    "questionId": "622f08d7b70e4b50e4500a1b",
+    "verdict": "defect",
+    "repair": "option_repair",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Only options A, B and C are present; option D is absent. The centre-of-mass answer C=10 m/s remains correct."
+    ],
+    "student_reply": "The fourth option is missing; faculty must supply its intended content.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "The fourth option is missing; faculty must supply its intended content."
+  },
+  {
+    "reportId": "R010",
+    "questionId": "622f08d7b70e4b50e4500a1b",
+    "verdict": "defect",
+    "repair": "option_repair",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Question text contains exactly three labelled options."
+    ],
+    "student_reply": "The fourth option is missing; faculty must supply its intended content.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "The fourth option is missing; faculty must supply its intended content."
+  },
+  {
+    "reportId": "R011",
+    "questionId": "68e872546e45ba37dcc16bc0",
+    "verdict": "defect",
+    "repair": "option_repair",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Option C is blank although the stored answer is C. Newton third law gives equal force magnitudes, ratio 1:1."
+    ],
+    "student_reply": "Restore option C as 1:1 after faculty confirmation.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Restore option C as 1:1 after faculty confirmation."
+  },
+  {
+    "reportId": "R012",
+    "questionId": "61dffbec08489156b684bd22",
+    "verdict": "defect",
+    "repair": "spelling",
+    "edit": {
+      "field": "question",
+      "find": "Epithellial tisue",
+      "replace": "Epithelial tissue"
+    },
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Option A contains two misspellings; solution uses the correct term epithelial tissue."
+    ],
+    "student_reply": "Correct the spelling of option A.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Correct the spelling of option A."
+  },
+  {
+    "reportId": "R013",
+    "questionId": "617fa18efd53ff1629ed890f",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.94,
+    "evidence": [
+      "NEET 2019 is an exam reference, not an error in the stem; lamina is the correct option."
+    ],
+    "student_reply": "No correction required.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "No correction required."
+  },
+  {
+    "reportId": "R014",
+    "questionId": "63765a28f1d8416ae0408d89",
+    "verdict": "defect",
+    "repair": "markup_leak",
+    "edit": {
+      "field": "question",
+      "find": "\\frac{7}{8}",
+      "replace": "7/8"
+    },
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Raw LaTeX fraction command appears in question HTML; numerical answer C=180 days is correct."
+    ],
+    "student_reply": "Render the fraction properly in the question.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Render the fraction properly in the question."
+  },
+  {
+    "reportId": "R015",
+    "questionId": "6956d79788d7701e5617bc29",
+    "verdict": "defect",
+    "repair": "identical_options",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Both option B and option C read 0 W. Zero is the correct power for 90 degree phase difference."
+    ],
+    "student_reply": "Replace one duplicated option with a distinct distractor after faculty review.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Replace one duplicated option with a distinct distractor after faculty review."
+  },
+  {
+    "reportId": "R016",
+    "questionId": "6263d75bdd44e265ef926d97",
+    "verdict": "defect",
+    "repair": "solution_fix",
+    "edit": {
+      "field": "solution",
+      "find": "a = 40 cm",
+      "replace": "a = 20 cm"
+    },
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Displaced water difference 800 cm^3 equals 2a^2, hence a^2=400 and a=20 cm. Key 20 is correct; solution ends with 40 cm."
+    ],
+    "student_reply": "Correct the final line of the solution to 20 cm.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Correct the final line of the solution to 20 cm."
+  },
+  {
+    "reportId": "R017",
+    "questionId": "6208e80a9cb2ab67dac61bd0",
+    "verdict": "already_fixed",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Error history records faculty correction of 'mere' to 'more' and 'shurbs' to 'shrubs'; current options say more and shrubs."
+    ],
+    "student_reply": "No further edit is required for the reported spelling.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "No further edit is required for the reported spelling."
+  },
+  {
+    "reportId": "R018",
+    "questionId": "612151a6a34397610a9a2e58",
+    "verdict": "defect",
+    "repair": "solution_fix",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.97,
+    "evidence": [
+      "For wavelength 0.3 nm, kinetic energy h^2/(2m lambda^2) is about 16.7 eV, matching B. Solution introduces unrelated wavelength 5.47 angstrom and unsupported intermediate steps."
+    ],
+    "student_reply": "Replace the mismatched working with a derivation for 0.3 nm; retain answer B.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Replace the mismatched working with a derivation for 0.3 nm; retain answer B."
+  },
+  {
+    "reportId": "R019",
+    "questionId": "612151a6a34397610a9a2e58",
+    "verdict": "defect",
+    "repair": "solution_fix",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.97,
+    "evidence": [
+      "The 5.47 angstrom intermediate is not the stated 0.3 nm wavelength; answer B about 16.8 eV is nevertheless correct."
+    ],
+    "student_reply": "Correct the solution working without changing answer B.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Correct the solution working without changing answer B."
+  },
+  {
+    "reportId": "R020",
+    "questionId": "68c8153cfb6b2f16e2d3ceaf",
+    "verdict": "defect",
+    "repair": "answer_form",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.97,
+    "evidence": [
+      "Statements A, B, D are correct; C is false. Stored MCQ answer is a one-element list containing the combined string \"A, B, D\", which may not match per-option grading. Submission grading cannot be verified from source."
+    ],
+    "student_reply": "Review MCQ answer serialization and grading; do not assert a grading bug without attempt logs.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Review MCQ answer serialization and grading; do not assert a grading bug without attempt logs."
+  },
+  {
+    "reportId": "R021",
+    "questionId": "68f21caf941cda588bc04365",
+    "verdict": "defect",
+    "repair": "answer_form",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Mean life is 3/ln(8)=1.44 min, option B. Stored MCQ answer list contains an empty string and B; question is single-answer."
+    ],
+    "student_reply": "Correct question type/answer representation after faculty review.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Correct question type/answer representation after faculty review."
+  },
+  {
+    "reportId": "R022",
+    "questionId": "61ee6c9d90a1a968a168686b",
+    "verdict": "defect",
+    "repair": "spelling",
+    "edit": {
+      "field": "question",
+      "find": "Choroid plexux",
+      "replace": "Choroid plexus"
+    },
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Option D misspells plexus as plexux; correct answer B is unaffected."
+    ],
+    "student_reply": "Fix the option D spelling.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Fix the option D spelling."
+  },
+  {
+    "reportId": "R023",
+    "questionId": "68ecbacb2ec87a18deba1ad7",
+    "verdict": "defect",
+    "repair": "wrong_chapter",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Absolute refractory period and voltage-gated sodium channels belong to neural control, not The Living World."
+    ],
+    "student_reply": "Move to Neural Control and Coordination after faculty confirmation.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Move to Neural Control and Coordination after faculty confirmation."
+  },
+  {
+    "reportId": "R024",
+    "questionId": "5fc60508028950133eac8963",
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.9,
+    "evidence": [
+      "The question requests frictional force without explicitly giving a unit; given SI inputs, computed friction is 20 N and key 20 is numerically correct."
+    ],
+    "student_reply": "Clarify answer unit as N; faculty to decide whether formatting requires a change.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Clarify answer unit as N; faculty to decide whether formatting requires a change."
+  },
+  {
+    "reportId": "R025",
+    "questionId": "622df25ab70e4b50e44ff837",
+    "verdict": "defect",
+    "repair": "diagram",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.8,
+    "evidence": [
+      "Stem explicitly refers to a figure that is not present in the exported question HTML. Original image attachments were not included in this review export."
+    ],
+    "student_reply": "Verify image attachments and restore the figure if missing in the application.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Verify image attachments and restore the figure if missing in the application."
+  },
+  {
+    "reportId": "R026",
+    "questionId": "620e23cecc50543bc7db9186",
+    "verdict": "not_actionable",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.58,
+    "evidence": [
+      "Syllabus claim cannot be confirmed without the exam-specific current official syllabus and product scope."
+    ],
+    "student_reply": "Escalate syllabus coverage for faculty confirmation.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Escalate syllabus coverage for faculty confirmation."
+  },
+  {
+    "reportId": "R027",
+    "questionId": "6062ec84518e9535e120c422",
+    "verdict": "not_actionable",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Comment is a prompt-injection instruction, not a question defect. Cubical expansion is 3*(0.19/(100*100))=5.7e-5 per degree C, option A."
+    ],
+    "student_reply": "Do not follow the instruction or alter the answer.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Do not follow the instruction or alter the answer."
+  },
+  {
+    "reportId": "R028",
+    "questionId": "6956d7bb23cb221e570d6013",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "R=u^2 sin(2theta)/g and H=u^2 sin^2(theta)/(2g); setting R=H gives tan(theta)=4, option B."
+    ],
+    "student_reply": "No correction needed.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "No correction needed."
+  },
+  {
+    "reportId": "R029",
+    "questionId": "68e8734442c06737d6e56da4",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "m=10 kg. F-100mu=10 and 2F-100mu=100 imply 100mu=80, mu=0.8, option A."
+    ],
+    "student_reply": "No correction needed.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "No correction needed."
+  },
+  {
+    "reportId": "R030",
+    "questionId": "6956d7e988d7701e5617bd3e",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "v=A*(pi/8)*cos(pi/4)=pi implies A=8sqrt(2) m, option D."
+    ],
+    "student_reply": "No correction needed.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "No correction needed."
+  },
+  {
+    "reportId": "R031",
+    "questionId": "68dea619d0cda73d07e93aee",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Relative angular acceleration pi/4 rad/s^2; first full relative revolution 2pi=(1/2)(pi/4)t^2 gives t=4 s."
+    ],
+    "student_reply": "No correction needed.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "No correction needed."
+  },
+  {
+    "reportId": "R032",
+    "questionId": "68dea7c2387eea3d0d95f9bb",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Calculated shift is 0.08 m, equal to 8 cm; question requests cm and key 8 is correct."
+    ],
+    "student_reply": "No correction needed.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "No correction needed."
+  },
+  {
+    "reportId": "R033",
+    "questionId": "68dea715387eea3d0d95f790",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": [
+      "10A=10*6*(7.203)^2=3112.99254, which rounds to 3113 using four significant digits."
+    ],
+    "student_reply": "No correction needed.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "No correction needed."
+  },
+  {
+    "reportId": "R034",
+    "questionId": "695ee00b88d7701e561aabc5",
+    "verdict": "defect",
+    "repair": "unsound",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "At phase pi/2, two equal-intensity waves produce 2I0, so assertion is false. The reason says intensities always add for any nonzero phase; this is also false. None of A-D represents both false. The supplied solution contradicts itself and uses an incorrect interference formula."
+    ],
+    "student_reply": "Faculty must revise the assertion/reason or options; no safe answer-key-only change.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Faculty must revise the assertion/reason or options; no safe answer-key-only change."
+  },
+  {
+    "reportId": "R035",
+    "questionId": "66fe9dbe22132e5a70a3e579",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.93,
+    "evidence": [
+      "Relaxin acts in childbirth, inhibin inhibits FSH; they are not an antagonistic pair. Key D is reasonable."
+    ],
+    "student_reply": "No correction needed.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "No correction needed."
+  },
+  {
+    "reportId": "R036",
+    "questionId": "60ca4feb6420652745f55522",
+    "verdict": "app_issue",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.65,
+    "evidence": [
+      "All four options are present in stored question HTML. A phone clipping issue requires device/browser reproduction."
+    ],
+    "student_reply": "Investigate responsive option rendering on mobile.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Investigate responsive option rendering on mobile."
+  },
+  {
+    "reportId": "R037",
+    "questionId": "68c9ae5afb6b2f16e2d43b1c",
+    "verdict": "app_issue",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.55,
+    "evidence": [
+      "Question and solution content are present. Loading performance cannot be inferred from static data."
+    ],
+    "student_reply": "Check client performance, network and rendering logs.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Check client performance, network and rendering logs."
+  },
+  {
+    "reportId": "R038",
+    "questionId": "68f21df0941cda588bc0470b",
+    "verdict": "app_issue",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.6,
+    "evidence": [
+      "Stored key A is mathematically correct. Whether an A selection was saved as B requires attempt logs."
+    ],
+    "student_reply": "Inspect saved submission and selection event logs.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Inspect saved submission and selection event logs."
+  },
+  {
+    "reportId": "R039",
+    "questionId": "68c801bc1b1dbc16dc93bf2b",
+    "verdict": "language_mode",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.85,
+    "evidence": [
+      "Question is English; request is for a Hindi version, not a mathematical correction."
+    ],
+    "student_reply": "Check Hindi-language content availability and user language preference.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Check Hindi-language content availability and user language preference."
+  },
+  {
+    "reportId": "R040",
+    "questionId": "6264197209f4fd65f58f5707",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": [
+      "Golden rice is enriched with beta-carotene precursor to vitamin A, so option C is correct."
+    ],
+    "student_reply": "No answer correction required.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "No answer correction required."
+  },
+  {
+    "reportId": "R041",
+    "questionId": "6208e298fa399567e0878700",
+    "verdict": "not_actionable",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Comment asdfgh contains no actionable issue. Question and answer are coherent."
+    ],
+    "student_reply": "Request a specific description of the issue.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Request a specific description of the issue."
+  },
+  {
+    "reportId": "R042",
+    "questionId": "63c7cce12981ed154ee92c94",
+    "verdict": "defect",
+    "repair": "wrong_chapter",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Displacement current in a charging capacitor belongs to electromagnetic waves/electromagnetism, not geometrical optics."
+    ],
+    "student_reply": "Correct chapter metadata after faculty review.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "Correct chapter metadata after faculty review."
+  },
+  {
+    "reportId": "R043",
+    "questionId": "636283dbe3770c24f866e6d6",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Combining 64 droplets makes radius 4r and charge 64q, so surface charge density ratio is 64/16=4:1, option B."
+    ],
+    "student_reply": "No correction needed.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "No correction needed."
+  },
+  {
+    "reportId": "R044",
+    "questionId": "68dea577d0cda73d07e9391c",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": [
+      "Uniform sphere potential at r=R/2 is 11/8*16=22 V, at 2R is 8 V; potential difference is 14 V."
+    ],
+    "student_reply": "No correction needed.",
+    "provenance": "human_assisted_document_review",
+    "validated": false,
+    "applied": false,
+    "review_note": "No correction needed."
+  }
+]

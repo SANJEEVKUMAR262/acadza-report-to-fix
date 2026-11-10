@@ -1,0 +1,25 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Frontend
+node_modules/
+.next/
+
+# macOS
+.DS_Store
+
+# Private environment files
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
