@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-11-11T07:11:01.932438+00:00",
+  "reportId": "R010",
+  "source_experiment": "R010_groq_batch.json",
+  "review_type": "human_assisted_factual_review",
+  "ai_failure": {
+    "type": "JSONDecodeError",
+    "raw_response_length": 0
+  },
+  "verified_finding": {
+    "verdict": "defect",
+    "issue": "Option D is missing from the question.",
+    "answer_key_correct": true,
+    "correct_answer": "C",
+    "correct_value": "10 m/s",
+    "safe_edit_available": false,
+    "reason": "The original text of option D is unavailable. It must not be invented."
+  },
+  "route": "faculty_review",
+  "faculty_approval": "pending",
+  "student_reply": "Thank you for reporting the missing option. The question currently displays only options A, B and C. The correct answer remains option C (10 m/s). The missing option has been flagged for faculty review."
+}

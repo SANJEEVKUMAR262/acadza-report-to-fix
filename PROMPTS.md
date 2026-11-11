@@ -109,3 +109,135 @@ No fabricated model outputs or invented prompt iterations are included here. Fur
 Once API access is available, the intended evaluation should test structured classification, evidence-grounded corrections, duplicate-report handling, prompt-injection resistance, and conservative abstention when question data is insufficient.
 
 Each experiment should preserve the exact input prompt, raw model output, validation result, identified failure, and subsequent correction.
+
+
+## 9. Live Groq AI Experiments
+
+Following the OpenAI quota limitation, the project successfully used
+Groq with model `openai/gpt-oss-20b` for live AI experiments.
+
+Implementation:
+- `engine/groq_batch.py`
+- `engine/proposal_validator.py`
+- `engine/ai_quality_gate.py`
+
+Experiment evidence is stored in `data/ai_experiments/`.
+
+All 44 report IDs were covered by an attempted AI experiment.
+Coverage means attempted processing, not 44 successful or approved outputs.
+Some attempts produced malformed JSON, incomplete responses, or proposals
+rejected by validation.
+
+The existing `data/results.json` assessments remain human-assisted.
+They must not be attributed to Groq.
+
+### Prompting approach
+
+The model received the original question, solution, answer key, and
+student complaint. It was instructed to produce a structured JSON
+assessment containing the report ID, question ID, verdict, repair
+category, evidence, optional edit, confidence, student reply, and
+faculty-review route.
+
+The prompt emphasized evidence-based reasoning, minimal supported
+corrections, and faculty oversight. Original prompts and raw outputs
+are preserved in the experiment records.
+
+### Iteration 1: Initial live model output
+
+The first R001 experiment correctly identified an answer-key problem,
+but the student-facing explanation was inadequate.
+
+A separate JSON-mode attempt returned an API validation error.
+A subsequent retry without that response-format setting succeeded.
+
+### Iteration 2: Improved student communication
+
+The R001 iteration-two retry produced a more useful student reply
+while retaining the correct answer-key diagnosis.
+
+R002 demonstrated that structurally valid output can still contain
+unsupported reasoning: the model claimed that the original solution
+used multiplication where the original MathML already represented
+subtraction. This was initially missed by automated validation.
+
+### Iteration 3: Batch processing and quality checks
+
+Batch experiments used temperature 0 and a structured output prompt.
+Each attempt preserved its raw response, parsed proposal when
+available, validation findings, and errors.
+
+The batch processor did not edit original questions. Every proposed
+correction was routed for faculty review.
+
+## 10. Observed AI Failures
+
+### Failure A: Unsupported factual explanation — R002
+
+The model proposed a correction based partly on an incorrect claim
+about the existing solution's mathematical operation.
+
+Impact: A plausible explanation could mislead faculty despite a
+structurally valid proposal.
+
+Mitigation: Compare evidence with the original question and MathML,
+rather than trusting model-generated explanations or schema checks.
+
+### Failure B: Invalid edit target — R012
+
+The model identified a spelling issue but proposed editing an
+unsupported `options` field instead of the actual question field.
+
+Impact: The proposed correction could not be safely applied.
+
+Mitigation: Structural validation rejected the proposal. A separate
+human-corrected candidate was saved for faculty review.
+
+### Failure C: Incorrect replacement match — R014
+
+The model identified a raw LaTeX rendering issue but proposed a
+replacement string that did not match the original source. Its verdict
+and repair combination also violated the expected schema.
+
+Impact: The proposed edit would not reliably correct the question.
+
+Mitigation: Validate exact text matches and repair categories.
+A separate corrected candidate was saved pending faculty approval.
+
+### Failure D: Unsupported answer-key replacement — R006
+
+The question omitted the cube's edge length, although its solution
+implicitly assumed 10 cm. The model detected missing information but
+proposed replacing the answer `50` with `?` and omitted the student
+reply.
+
+Impact: The proposal could damage an answer key without resolving
+the incomplete question.
+
+Mitigation: Preserve the original answer, document that 50 mm³ is
+conditional on the assumed edge length, and request faculty review.
+See `R006_human_review.json`.
+
+### Failure E: Malformed or truncated JSON
+
+Several attempts, including R019 and R031, failed JSON parsing.
+Other responses omitted required fields such as `student_reply`.
+
+Impact: The output could not be treated as a complete assessment.
+
+Mitigation: Preserve raw responses and parsing errors, mark failed
+attempts for review, and never auto-apply them.
+
+## 11. Evaluation Boundaries
+
+- Attempt coverage: 44 of 44 report IDs.
+- Attempt coverage does not establish correctness or successful parsing.
+- Automated PASS indicates validation checks passed, not faculty approval.
+- Human-corrected proposals are separate from raw AI outputs.
+- No proposed correction is automatically applied.
+- The dashboard uses prepared human-assisted assessments rather than
+  making a live Groq request on each page load.
+- Browser-local faculty decisions are not shared backend approvals.
+
+The experiment records provide auditable evidence of both successful
+and unsuccessful model behavior.

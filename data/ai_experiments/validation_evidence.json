@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-11-11T06:58:55.637439+00:00",
+  "description": "Recorded validation outcomes and human review findings",
+  "cases": [
+    {
+      "reportId": "R001",
+      "experiment": "R001_groq_iteration2_retry.json",
+      "structural_errors": [],
+      "quality_errors": [],
+      "automated_pass": true,
+      "human_approved": true,
+      "human_review_note": null
+    },
+    {
+      "reportId": "R002",
+      "experiment": "R002_groq_experiment.json",
+      "structural_errors": [],
+      "quality_errors": [],
+      "automated_pass": true,
+      "human_approved": false,
+      "human_review_note": "Human review found an unsupported claim that the solution should use subtraction instead of multiplication; the source already uses subtraction."
+    },
+    {
+      "reportId": "R002",
+      "experiment": "R002_groq_iteration2.json",
+      "structural_errors": [],
+      "quality_errors": [
+        "Missing fields: student_reply",
+        "Student reply is missing or empty",
+        "Unsupported claim: solution uses a product instead of subtraction"
+      ],
+      "automated_pass": false,
+      "human_approved": false,
+      "human_review_note": "Missing student_reply and unsupported claim that the original solution uses a product."
+    }
+  ]
+}

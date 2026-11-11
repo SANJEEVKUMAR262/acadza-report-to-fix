@@ -76,7 +76,7 @@ The assessment output is also available at `data/results.json`.
 
 ## AI Usage and Provenance
 
-An OpenAI API integration was tested but encountered an insufficient-quota error. Completed assessments were produced through human-assisted mathematical review and validation. They must not be represented as successful automated model-generated classifications.
+The OpenAI API test encountered insufficient quota. Live experiments were subsequently performed using Groq (`openai/gpt-oss-20b`), covering all 44 report IDs. Raw outputs, errors, and validation evidence are preserved in `data/ai_experiments/`. Some attempts failed validation or JSON parsing. The dashboard's completed assessments remain human-assisted and must not be represented as Groq-generated classifications.
 
 ## Limitations
 

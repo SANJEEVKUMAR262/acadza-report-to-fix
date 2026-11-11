@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-11-11T07:01:47.600374+00:00",
+  "reportId": "R012",
+  "source_experiment": "R012_groq_batch.json",
+  "origin": "human_corrected_ai_proposal",
+  "changes": [
+    "Changed edit field from options to question",
+    "Reworded student reply to avoid promising publication"
+  ],
+  "proposal": {
+    "reportId": "R012",
+    "questionId": "61dffbec08489156b684bd22",
+    "verdict": "defect",
+    "repair": "spelling",
+    "edit": {
+      "field": "question",
+      "find": "Epithellial tisue",
+      "replace": "Epithelial tissue"
+    },
+    "route": "faculty_review",
+    "confidence": 0.95,
+    "evidence": [
+      "Option A contains misspellings: 'Epithellial' should be 'Epithelial', 'tisue' should be 'tissue'."
+    ],
+    "student_reply": "Thank you for reporting the spelling error in option A. The correct spelling is 'Epithelial tissue'. The proposed correction has been sent for faculty review."
+  },
+  "structural_errors": [],
+  "quality_errors": [],
+  "faculty_approval": "pending"
+}

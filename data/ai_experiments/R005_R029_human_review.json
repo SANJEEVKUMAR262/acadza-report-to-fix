@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-11-11T07:03:06.093507+00:00",
+  "review_type": "human_assisted_factual_review",
+  "cases": [
+    {
+      "reportId": "R005",
+      "source": "R005_groq_batch.json",
+      "verdict_accurate": true,
+      "reason": "Face contribution q/(4 epsilon_0) plus corner contribution q/(4 epsilon_0) gives n=1.",
+      "faculty_approval": "pending"
+    },
+    {
+      "reportId": "R029",
+      "source": "R029_groq_batch.json",
+      "verdict_accurate": true,
+      "reason": "The equations yield mu=0.8; answer key A is correct.",
+      "reply_issue": "The AI says the student's calculation is correct, although the student claimed 0.4.",
+      "recommended_student_reply": "Thank you for reporting this. Rechecking both force equations gives a coefficient of friction of 0.8, so option A is correct. No answer-key correction is proposed.",
+      "faculty_approval": "pending"
+    }
+  ]
+}

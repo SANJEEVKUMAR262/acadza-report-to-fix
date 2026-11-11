@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-11-11T07:10:05.745155+00:00",
+  "reportId": "R014",
+  "source_experiment": "R014_groq_batch.json",
+  "origin": "human_corrected_ai_proposal",
+  "changes": [
+    "Changed verdict from display_issue to defect to match schema",
+    "Corrected exact-match backslash escaping",
+    "Reworded student reply to require faculty approval"
+  ],
+  "proposal": {
+    "reportId": "R014",
+    "questionId": "63765a28f1d8416ae0408d89",
+    "verdict": "defect",
+    "repair": "markup_leak",
+    "edit": {
+      "field": "question",
+      "find": "\\frac{7}{8}",
+      "replace": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mfrac><mn>7</mn><mn>8</mn></mfrac></math>"
+    },
+    "route": "faculty_review",
+    "confidence": 0.9,
+    "evidence": [
+      "The raw LaTeX \\frac{7}{8} is not rendered in the question, causing a display issue.",
+      "Replacing it with proper MathML or a rendered fraction fixes the markup leak."
+    ],
+    "student_reply": "Thank you for reporting the fraction display issue. The question contains raw fraction markup. A rendering correction has been proposed for faculty review. The correct answer remains option C (180 days)."
+  },
+  "structural_errors": [],
+  "quality_errors": [],
+  "faculty_approval": "pending"
+}
